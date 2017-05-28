@@ -5,17 +5,16 @@ var Navigation = require('Navigation');
 var Main = (props) => {
   return (
     <div>
+      <Navigation/>
+        <div className="row">
 
-      <div>
-        <Navigation/>
-        <div>
-          <p>Main.jsx rendered</p>
-          {props.children}
+          <div className="column small-centered medium-6 large-4">
+            {props.children}
+          </div>
+
+
+
         </div>
-
-
-
-      </div>
 
 
     </div>
