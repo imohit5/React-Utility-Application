@@ -3,7 +3,7 @@ var React = require('react');
 var CountdownForm = React.createClass({
   onSubmit:function(e){
     e.preventDefault();
-    debugger;
+    
     var strSeconds = this.refs.seconds.value;
     var intSeconds = parseInt(strSeconds, 10);
     if(strSeconds.length>0 && strSeconds.match(/^[0-9]*$/) && intSeconds>0){
